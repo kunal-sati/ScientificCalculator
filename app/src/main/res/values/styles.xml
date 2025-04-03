@@ -1,0 +1,42 @@
+<resources>
+    <!-- Base Button Style -->
+    <style name="CalcButtonBase">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:elevation">2dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- Number Buttons -->
+    <style name="CalcButtonNumber" parent="CalcButtonBase">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:backgroundTint">@color/black_shade_3</item>
+    </style>
+
+    <!-- Operator Buttons -->
+    <style name="CalcButtonOperator" parent="CalcButtonBase">
+        <item name="android:textColor">@color/orange_500</item>
+        <item name="android:backgroundTint">@color/black_shade_4</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <!-- Function Buttons -->
+    <style name="CalcButtonFunction" parent="CalcButtonBase">
+        <item name="android:textColor">@color/teal_200</item>
+        <item name="android:backgroundTint">@color/black_shade_4</item>
+    </style>
+
+    <!-- Scientific Buttons -->
+    <style name="CalcButtonScientific" parent="CalcButtonBase">
+        <item name="android:textColor">@color/teal_200</item>
+        <item name="android:backgroundTint">@color/black_shade_4</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+</resources>

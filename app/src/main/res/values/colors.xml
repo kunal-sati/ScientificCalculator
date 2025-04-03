@@ -1,0 +1,54 @@
+<resources>
+    <!-- Dark theme colors -->
+    <color name="black_shade_1">#121212</color>
+    <color name="black_shade_2">#1E1E1E</color>
+    <color name="black_shade_3">#252525</color>
+    <color name="black_shade_4">#2E2E2E</color>
+
+    <!-- Text and accent colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="white_60">#99FFFFFF</color>
+    <color name="orange_500">#FF9800</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+    <color name="primaryColor">#6200EE</color>
+    <color name="primaryDarkColor">#3700B3</color>
+    <color name="accentColor">#03DAC5</color>
+
+    <!-- Background Colors -->
+    <color name="backgroundLight">#F5F5F5</color>
+    <color name="backgroundDark">#121212</color>
+    <color name="backgroundColor">#F5F5F5</color> <!-- Light gray background -->
+
+    <!-- Button Colors -->
+    <color name="buttonColor">#6200EE</color>
+    <color name="buttonTextColor">#FFFFFF</color>
+
+    <!-- EditText Colors -->
+    <color name="editTextBackground">#E0E0E0</color>
+    <color name="editTextTextColor">#212121</color>
+
+    <!-- Card & Grid Colors -->
+    <color name="cardBackground">#FFFFFF</color>
+
+    <!-- Misc Colors -->
+    <color name="dividerColor">#BDBDBD</color>
+
+    <!-- Accent Colors -->
+    <color name="redAcent">#D32F2F</color>  <!-- Red Accent for Danger Buttons -->
+    <color name="buttonPressedColor">#3700B3</color>  <!-- Button Pressed State -->
+
+    <!-- Background Colors -->
+    <color name="gridBackground">#E0E0E0</color>  <!-- Grid Background -->
+    <color name="edittextBackground">#FFFFFF</color>  <!-- EditText Background -->
+
+    <!-- Text Colors -->
+    <color name="textPrimary">#212121</color>  <!-- Dark Gray Text -->
+    <color name="textSecondary">#757575</color>  <!-- Light Gray Text -->
+
+    <!-- Button Colors -->
+
+    <!-- Text Colors -->
+
+    <!-- EditText Background -->
+</resources>

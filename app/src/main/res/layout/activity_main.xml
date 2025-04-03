@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_shade_1"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+    <!-- Display Area -->
+    <Button
+        android:id="@+id/bshift"
+        style="@style/CalcButtonFunction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="89dp"
+        android:text="SHIFT"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/displayLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- Secondary Display (History/Expression) -->
+        <TextView
+            android:id="@+id/idTVSecondary"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="bottom|end"
+            android:textColor="@color/white_60"
+            android:textSize="14sp"
+            tools:text="123 + 456" />
+
+        <!-- Primary Display (Result) -->
+        <TextView
+            android:id="@+id/idTVprimary"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="bottom|end"
+            android:textColor="@color/white"
+            android:textSize="48sp"
+            tools:text="579" />
+    </LinearLayout>
+
+    <!-- Function Buttons Row -->
+
+    <!-- Scientific Buttons Card -->
+
+    <!-- Main Keypad Card -->
+
+    <!-- Shift Button -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cardView2"
+        android:layout_marginBottom="7dp"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/bMatrix"
+            style="@style/CalcButtonFunction"
+            android:layout_width="wrap_content"
+            android:layout_weight="0"
+            android:text="Matrix "
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/bac"
+            style="@style/CalcButtonFunction"
+            android:layout_weight="1"
+            android:text="AC" />
+
+        <Button
+            android:id="@+id/bc"
+            style="@style/CalcButtonFunction"
+            android:layout_weight="1"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/bbrac1"
+            style="@style/CalcButtonOperator"
+            android:layout_weight="1"
+            android:text="(" />
+
+        <Button
+            android:id="@+id/bbrac2"
+            style="@style/CalcButtonOperator"
+            android:layout_weight="1"
+            android:text=")" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cardView"
+        android:layout_marginBottom="6dp"
+        app:cardBackgroundColor="@color/black_shade_2"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="161dp"
+            android:columnCount="5"
+            android:padding="8dp"
+            android:rowCount="2">
+
+            <!-- Row 1 -->
+            <Button
+                android:id="@+id/bsin"
+                style="@style/CalcButtonScientific"
+                android:layout_columnWeight="1"
+                android:text="sin"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/bcos"
+                style="@style/CalcButtonScientific"
+                android:layout_columnWeight="1"
+                android:text="cos"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btan"
+                style="@style/CalcButtonScientific"
+                android:layout_columnWeight="1"
+                android:text="tan"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/blog"
+                style="@style/CalcButtonScientific"
+                android:layout_columnWeight="1"
+                android:text="log"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/bln"
+                style="@style/CalcButtonScientific"
+                android:layout_columnWeight="1"
+                android:text="ln"
+                android:textSize="16sp" />
+
+            <!-- Row 2 -->
+            <Button
+                android:id="@+id/bfact"
+                style="@style/CalcButtonScientific"
+                android:layout_columnWeight="1"
+                android:text="x!" />
+
+            <Button
+                android:id="@+id/bsquare"
+                style="@style/CalcButtonScientific"
+                android:layout_columnWeight="1"
+                android:text="x²" />
+
+            <Button
+                android:id="@+id/bsqrt"
+                style="@style/CalcButtonScientific"
+                android:layout_columnWeight="1"
+                android:text="√" />
+
+            <Button
+                android:id="@+id/binv"
+                style="@style/CalcButtonScientific"
+                android:layout_columnWeight="1"
+                android:text="1/x" />
+
+            <Button
+                android:id="@+id/bdiv"
+                style="@style/CalcButtonScientific"
+                android:layout_columnWeight="1"
+                android:text="÷" />
+        </GridLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        app:cardBackgroundColor="@color/black_shade_2"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="4"
+            android:padding="8dp"
+            android:rowCount="5">
+
+            <!-- Row 1 -->
+            <Button
+                android:id="@+id/b7"
+                style="@style/CalcButtonNumber"
+                android:layout_columnWeight="1"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/b8"
+                style="@style/CalcButtonNumber"
+                android:layout_columnWeight="1"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/b9"
+                style="@style/CalcButtonNumber"
+                android:layout_columnWeight="1"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/bmul"
+                style="@style/CalcButtonOperator"
+                android:layout_columnWeight="1"
+                android:text="×" />
+
+            <!-- Row 2 -->
+            <Button
+                android:id="@+id/b4"
+                style="@style/CalcButtonNumber"
+                android:layout_columnWeight="1"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/b5"
+                style="@style/CalcButtonNumber"
+                android:layout_columnWeight="1"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/b6"
+                style="@style/CalcButtonNumber"
+                android:layout_columnWeight="1"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/bminus"
+                style="@style/CalcButtonOperator"
+                android:layout_columnWeight="1"
+                android:text="-" />
+
+            <!-- Row 3 -->
+            <Button
+                android:id="@+id/b1"
+                style="@style/CalcButtonNumber"
+                android:layout_columnWeight="1"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/b2"
+                style="@style/CalcButtonNumber"
+                android:layout_columnWeight="1"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/b3"
+                style="@style/CalcButtonNumber"
+                android:layout_columnWeight="1"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/bplus"
+                style="@style/CalcButtonOperator"
+                android:layout_columnWeight="1"
+                android:text="+" />
+
+            <!-- Row 4 -->
+            <Button
+                android:id="@+id/bpi"
+                style="@style/CalcButtonNumber"
+                android:layout_columnWeight="1"
+                android:text="π" />
+
+            <Button
+                android:id="@+id/b0"
+                style="@style/CalcButtonNumber"
+                android:layout_columnWeight="1"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/bdot"
+                style="@style/CalcButtonNumber"
+                android:layout_columnWeight="1"
+                android:text="." />
+
+            <Button
+                android:id="@+id/bequal"
+                style="@style/CalcButtonOperator"
+                android:layout_columnWeight="1"
+                android:text="=" />
+        </GridLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
